@@ -20,5 +20,7 @@ Burada kullanılan bazı 3rd party kütüphaneler vardır. Bunlar;
   
   Ekranlarda constraintlayout kullanılmaya özen gösterilmiştir, layout bazlı performans sorunlarını ortadan kaldırmak için.
   
+  Ayrıca cihazın hafızasına ilgili repo'yu favori ekleme kısmıda yapılmıştır.
+  
   
   
