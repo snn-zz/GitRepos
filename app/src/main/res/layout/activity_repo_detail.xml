@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/activity_repo_detail_owner_image_view"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/activity_repo_detail_owner_image_size"
+        android:layout_margin="@dimen/activity_repo_detail_owner_image_margin"
+        app:layout_constraintRight_toRightOf="@+id/activity_detail_guideline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/activity_repo_detail_owner_name"
+        android:layout_width="0dp"
+        android:layout_marginVertical="@dimen/activity_repo_detail_data_item_margin"
+        android:layout_marginHorizontal="@dimen/activity_repo_detail_data_item_margin"
+        app:layout_constraintTop_toBottomOf="@+id/activity_repo_detail_star_title"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="@dimen/activity_repo_detail_data_item_title_text_size"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_detail_guideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/activity_detail_guideline"/>
+
+
+    <TextView
+        android:id="@+id/activity_repo_detail_star_title"
+        android:layout_width="0dp"
+        android:layout_marginVertical="@dimen/activity_repo_detail_data_item_margin"
+        android:layout_marginHorizontal="@dimen/activity_repo_detail_data_item_margin"
+        android:text="@string/activity_detail_star_title"
+        app:layout_constraintTop_toBottomOf="@+id/activity_repo_detail_owner_image_view"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="@dimen/activity_repo_detail_data_item_title_text_size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/activity_detail_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/activity_detail_guideline"/>
+
+
+    <TextView
+        android:id="@+id/activity_repo_detail_open_issue_title"
+        android:layout_width="0dp"
+        android:layout_marginVertical="@dimen/activity_repo_detail_data_item_margin"
+        android:layout_marginHorizontal="@dimen/activity_repo_detail_data_item_margin"
+        android:text="@string/activity_detail_open_issue_title"
+        app:layout_constraintTop_toBottomOf="@+id/activity_repo_detail_star_title"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="@dimen/activity_repo_detail_data_item_title_text_size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/activity_detail_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/activity_detail_guideline"/>
+
+    <TextView
+        android:id="@+id/activity_repo_detail_star_data"
+        android:layout_width="0dp"
+        android:layout_marginVertical="@dimen/activity_repo_detail_data_item_margin"
+        android:layout_marginHorizontal="@dimen/activity_repo_detail_data_item_margin"
+        app:layout_constraintTop_toBottomOf="@+id/activity_repo_detail_owner_image_view"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="@dimen/activity_repo_detail_data_item_title_text_size"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_detail_guideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/activity_detail_guideline"/>
+
+    <TextView
+        android:id="@+id/activity_repo_detail_open_issue_data"
+        android:layout_width="0dp"
+        android:layout_marginVertical="@dimen/activity_repo_detail_data_item_margin"
+        android:layout_marginHorizontal="@dimen/activity_repo_detail_data_item_margin"
+        app:layout_constraintTop_toBottomOf="@+id/activity_repo_detail_star_title"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="@dimen/activity_repo_detail_data_item_title_text_size"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_detail_guideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/activity_detail_guideline"/>
+
+    <TextView
+        android:id="@+id/activity_repo_detail_description_title"
+        android:layout_width="0dp"
+        android:layout_marginVertical="@dimen/activity_repo_detail_data_item_margin"
+        android:layout_marginHorizontal="@dimen/activity_repo_detail_data_item_margin"
+        android:text="@string/activity_detail_description_title"
+        app:layout_constraintTop_toBottomOf="@+id/activity_repo_detail_open_issue_data"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="@dimen/activity_repo_detail_data_item_title_text_size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/activity_detail_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/activity_detail_guideline"/>
+
+    <TextView
+        android:id="@+id/activity_repo_detail_description"
+        android:layout_width="0dp"
+        android:layout_marginVertical="@dimen/activity_repo_detail_data_item_margin"
+        android:layout_marginHorizontal="@dimen/activity_repo_detail_data_item_margin"
+        app:layout_constraintTop_toBottomOf="@+id/activity_repo_detail_description_title"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/activity_repo_detail_data_item_title_text_size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/activity_detail_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+</android.support.constraint.ConstraintLayout>

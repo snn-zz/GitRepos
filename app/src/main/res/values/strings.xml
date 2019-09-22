@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GitRepos</string>
+    <string name="activity_main_get_repo_button_name">SUBMIT</string>
+    <string name="activity_main_get_repo_title_hint">UserName</string>
+
+    <string name="activity_detail_star_title">Star</string>
+    <string name="activity_detail_open_issue_title">Open Issue</string>
+    <string name="activity_detail_description_title">Description</string>
+</resources>

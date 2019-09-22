@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <EditText
+        android:id="@+id/activity_main_repo_user_name"
+        android:layout_width="0dp"
+        android:layout_marginVertical="@dimen/activity_main_header_vertical_margin"
+        android:layout_marginHorizontal="@dimen/activity_main_header_horizontal_margin"
+        android:hint="@string/activity_main_get_repo_title_hint"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/activity_main_guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/activity_main_guideline"/>
+
+
+    <Button
+        android:id="@+id/activity_main_get_repo_list_button"
+        android:layout_width="0dp"
+        android:layout_marginVertical="@dimen/activity_main_header_vertical_margin"
+        android:layout_marginHorizontal="@dimen/activity_main_header_horizontal_margin"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_main_get_repo_button_name"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_main_guideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/activity_main_guideline"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_main_repo_list_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/activity_main_list_top_margin"
+        android:layout_height="0dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_main_get_repo_list_button">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/activity_main_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+</android.support.constraint.ConstraintLayout>

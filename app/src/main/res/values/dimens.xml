@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_main_header_vertical_margin">32dp</dimen>
+    <dimen name="activity_main_header_horizontal_margin">8dp</dimen>
+    <dimen name="activity_main_list_top_margin">8dp</dimen>
+    <dimen name="activity_main_list_divider_margin">8dp</dimen>
+
+    <dimen name="activity_main_repo_item_height">64dp</dimen>
+    <dimen name="activity_main_repo_item_padding">16dp</dimen>
+
+    <dimen name="activity_main_repo_item_text_size">20dp</dimen>
+    <dimen name="activity_main_repo_item_image_size">32dp</dimen>
+
+    <dimen name="activity_repo_detail_owner_image_size">200dp</dimen>
+    <dimen name="activity_repo_detail_owner_image_margin">16dp</dimen>
+    <dimen name="activity_repo_detail_data_margin">64dp</dimen>
+
+    <dimen name="activity_repo_detail_data_item_margin">16dp</dimen>
+    <dimen name="activity_repo_detail_data_item_title_text_size">20dp</dimen>
+
+    <dimen name="activity_detail_favorite_margin">8dp</dimen>
+
+</resources>

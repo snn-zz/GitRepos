@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/item_repo_repo_name_text_view"
+        android:layout_width="0dp"
+        android:textSize="@dimen/activity_main_repo_item_text_size"
+        android:textStyle="bold"
+        android:padding="@dimen/activity_main_repo_item_padding"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/ite_repo_guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/ite_repo_guideline"/>
+
+    <ImageView
+        android:id="@+id/item_repo_set_favourite_image"
+        android:layout_width="@dimen/activity_main_repo_item_image_size"
+        android:layout_height="@dimen/activity_main_repo_item_image_size"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintLeft_toLeftOf="@+id/ite_repo_guideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/ite_repo_guideline"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="?android:attr/listDivider"
+        android:layout_marginTop="@dimen/activity_main_repo_item_padding"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_repo_repo_name_text_view"
+        />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/ite_repo_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7"/>
+
+</android.support.constraint.ConstraintLayout>
